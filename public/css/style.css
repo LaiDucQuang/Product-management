@@ -1,0 +1,126 @@
+/* HEADER */
+.header {
+    padding: 15px 0;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.inner-logo img {
+    width: 150px;
+    height: auto;
+}
+
+.inner-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.inner-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inner-menu ul li a:hover {
+    color: #007bff;
+}
+
+/* FOOTER */
+.footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* TIÊU ĐỀ DANH SÁCH SẢN PHẨM */
+.box-head {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+.box-head .inner-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* SẢN PHẨM */
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ẢNH SẢN PHẨM */
+.product-item .inner-image {
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item .inner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* NỘI DUNG SẢN PHẨM */
+.product-item .inner-content {
+    padding: 15px;
+}
+
+.product-item .inner-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* GIÁ MỚI */
+.product-item .inner-price-new {
+    font-size: 20px;
+    font-weight: bold;
+    color: #dc3545;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* GIÁ CŨ */
+.product-item .inner-price-old {
+    font-size: 15px;
+    color: #999;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+/* PHẦN TRĂM GIẢM GIÁ */
+.product-item .inner-discount {
+    display: inline-block;
+    background: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-top: 10px;
+}
