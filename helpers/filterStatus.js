@@ -15,6 +15,15 @@ module.exports = (query) =>{
     }
     ];
 
+    // Nút đang được chọn
+    // const statusCurrent = query.status || "";
+
+    // filterStatus.forEach(item => {
+    //     if (item.status == statusCurrent) {
+    //         item.class = "active";
+    //     }
+    // });
+
         if(query.status){
             const index = filterStatus.findIndex(item => item.status ==query.status);
             filterStatus[index].class = "active";

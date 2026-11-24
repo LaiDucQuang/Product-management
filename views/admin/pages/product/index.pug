@@ -1,7 +1,7 @@
 extends ../../Layouts/default.pug
 include  ../../mixins/filter-status.pug
 include  ../../mixins/search.pug
-
+include  ../../mixins/pagination.pug
 block main
     h1 #{pageTitle}
 
@@ -55,3 +55,4 @@ block main
                             td
                                 button.btn.btn-warning.btn-sm Sửa
                                 button.btn.btn-danger.btn-sm.ml-2 Xóa
+    +pagination(pagination)         
